@@ -1,0 +1,1 @@
+Viết chương trình (sử dụng Java) nhập vào một mảng n các số thực, sau đó  hãy sắp xếp các phần tử của mảng theo thứ tự tăng dần bằng thuật toán nổi bọt (bubble sort) và liệt kê ra màn hình kết quả theo từng bước của thuật toán

@@ -1,0 +1,67 @@
+import java.util.Arrays;
+
+public class App {
+
+    public static void main(String[] args) throws Exception {
+        int n = 3;
+
+        App app = new App(n);
+        for (int i = 0; i < n; i++) {
+            app.result = new int[n];
+            app.cheo_TL_BR = new int[2 * n - 3];
+            app.cheo_TR_BL = new int[2 * n - 3];
+            app.datQuanHauThuK(i, 0);
+        }
+    }
+
+    private int[] result;
+    private int[] cheo_TL_BR;
+    private int[] cheo_TR_BL;
+    private int n;
+
+    public App(int n) {
+        this.n = n;
+
+    }
+
+    public void datQuanHauThuK(int k, int initRow) {
+        
+    }
+
+    public int nhacQuanHauThuK(int k) {
+
+        int r = result[k];
+        if ((k == 0 && r == 0) || (k == n - 1 && r == n - 1)) {
+            cheo_TR_BL[k - r + n - 2] = 0;
+        } else if ((k == n - 1 && r == 0) || (k == 0 && r == n - 1)) {
+            cheo_TL_BR[k + r - 1] = 0;
+        } else {
+            cheo_TR_BL[k - r + n - 2] = 0;
+            cheo_TL_BR[k + r - 1] = 0;
+        }
+
+        return r;
+    }
+
+    public boolean kiemTraCoTheDatQuanKTrenDongR(int k, int r) {
+        // kiểm tra trên dòng
+        for (int i = 0; i < k; i++) {
+            if (result[i] == r) {
+                return false;
+            }
+        }
+
+        if ((k == 0 && r == 0) || (k == n - 1 && r == 0) || (k == 0 && r == n - 1) || (k == n - 1 && r == n - 1)) {
+            return true;
+        }
+
+        // kiểm tra trên đường chéo
+        if (cheo_TR_BL[k - r + n - 2] == 1 || cheo_TL_BR[k + r - 1] == 1) {
+            return false;
+        } else {
+            return true;
+        }
+
+    }
+
+}

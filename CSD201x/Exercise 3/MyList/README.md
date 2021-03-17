@@ -1,0 +1,1 @@
+Viết một chương trình để  tạo ra một danh sách móc nối đơn mà trong đó dữ liệu của các node là số nguyên, khi thêm một phần tử thì thêm vào đầu của danh sách. Hãy liệt kê ra tất cả các phần tử trong danh sách, sau đó hãy tìm chỉ số của các phần tử có giá trị >x (x là 1 số nguyên).
