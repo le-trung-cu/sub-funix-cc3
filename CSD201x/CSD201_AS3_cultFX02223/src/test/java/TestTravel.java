@@ -1,6 +1,4 @@
 
-package app;
-
 import java.util.Iterator;
 
 import app.datastructs.MyBSTree;
@@ -9,7 +7,7 @@ import app.datastructs.Node;
 public class TestTravel {
     static MyBSTree<Integer> tree;
 
-    public static void main(String[] args) {
+    public static void mainTest(String[] args) {
         tree = new MyBSTree<>();
         tree.insert(6);
         tree.insert(4);

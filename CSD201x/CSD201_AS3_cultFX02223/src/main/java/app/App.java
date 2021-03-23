@@ -34,7 +34,7 @@ public class App {
 
         System.out.println("11. Pre-order traverse");
 
-        System.out.println("12. seed data for test");
+        // System.out.println("12. seed data for test");
 
         System.out.println("Exit:");
 
@@ -108,8 +108,8 @@ public class App {
             case 11:
                 personManager.preOrder();
                 break;
-            case 12:
-                personManager.seedDataForTest();
+            // case 12:
+            //     personManager.seedDataForTest();
             default:
                 break;
             }
