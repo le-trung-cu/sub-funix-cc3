@@ -6,7 +6,9 @@ import java.util.Stack;
 
 public class MyBSTree<T extends Comparable<T>> {
 
+  // root node
   private Node<T> root;
+  // number of node in the tree
   private int nodeCount;
 
   // count number of products
@@ -232,12 +234,24 @@ public class MyBSTree<T extends Comparable<T>> {
     return this.root;
   }
 
+  // iterator for in-order travel
   public Iterator<Node<T>> iteratorInOrder() {
     return new IteratorInOrder<>(this.root);
   }
 
+  // iterator for BFT travel
   public Iterator<Node<T>> iteratorBFT(){
     return new IteratorBFT<>(this.root);
+  }
+
+  // iterator for post-order travel
+  public Iterator<Node<T>> iteratorPostOrder() {
+      return new IteratorPostOrder<>(this.root);
+  }
+
+  // iterator for pre-order travel
+  public Iterator<Node<T>> iteratorPreOrder() {
+    return new IteratorPreOrder<>(root);
   }
 
 }

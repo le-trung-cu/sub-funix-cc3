@@ -26,6 +26,24 @@ public class MyPersonService {
     }
   }
 
+  // post-order traverse
+  public void postOrder(){
+    Iterator<Node<Person>> iterator = tree.iteratorPostOrder();
+    while (iterator.hasNext()) {
+      Node<Person> current = iterator.next();
+      System.out.println(current.value.toString());
+    }
+  }
+  // pre-order traverse
+  public void preOrder(){
+    Iterator<Node<Person>> iterator = tree.iteratorPreOrder();
+    while (iterator.hasNext()) {
+      Node<Person> current = iterator.next();
+      System.out.println(current.value.toString());
+    }
+  }
+
+
   // 1.3 BFT a tree
   public void BFT() {
     Iterator<Node<Person>> iterator = tree.iteratorBFT();

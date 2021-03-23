@@ -1,8 +1,11 @@
 package app.datastructs;
 
 public class GraphEdge implements Comparable<GraphEdge> {
+  // start node
   int start;
+  // end node
   int end;
+  // weight of edge
   int edge;
 
   @Override

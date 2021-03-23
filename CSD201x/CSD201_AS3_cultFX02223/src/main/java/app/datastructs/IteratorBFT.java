@@ -3,6 +3,7 @@ package app.datastructs;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+// traversal Graph by Breadth-First traversal
 public class IteratorBFT<T> implements Iterator<Node<T>> {
   MyQueue<Node<T>> queue;
   Node<T> current;

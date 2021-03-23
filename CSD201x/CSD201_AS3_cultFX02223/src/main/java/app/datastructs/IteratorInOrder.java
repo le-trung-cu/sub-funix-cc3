@@ -3,6 +3,7 @@ package app.datastructs;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+// traversal Graph by InOrder traversal
 public class IteratorInOrder<T> implements Iterator<Node<T>> {
   private Node<T> current;
   private MyStack<Node<T>> stack;
@@ -22,13 +23,26 @@ public class IteratorInOrder<T> implements Iterator<Node<T>> {
     if (!hasNext()) {
       throw new NoSuchElementException();
     }
-    while (this.current != null) {
-      this.stack.push(current);
-      current = current.left;
+    while (!stack.isEmpty() || current != null) {
+      if(current != null){
+        stack.push(current);
+        current = current.left;
+      }else{
+        current = stack.pop();
+        Node<T> currentNode = current;
+        current = current.right;
+        return currentNode;
+      }
     }
-    current = stack.pop();
-    Node<T> currentNode = current;
-    current = current.right;
-    return currentNode;
+
+    return null;
+    // while (this.current != null) {
+    //   this.stack.push(current);
+    //   current = current.left;
+    // }
+    // current = stack.pop();
+    // Node<T> currentNode = current;
+    // current = current.right;
+    // return currentNode;
   }
 }

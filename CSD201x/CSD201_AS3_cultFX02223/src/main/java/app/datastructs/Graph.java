@@ -3,15 +3,15 @@ package app.datastructs;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 public class Graph {
   int[][] a;
   int n;
-
-  static int INF = 9999; // 9999 is considered as infinite value
+  // 9999 is considered as infinite value
+  static int INF = 9999;
+  // Map order number of node to Char
   String s1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   char[] b;
 
@@ -54,6 +54,8 @@ public class Graph {
 
   // Display weights
   public void displayWeights() {
+    System.out.println("The weighted matrix of the graph:");
+    System.out.println("=================================");
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < n; j++) {
         if (a[i][j] == INF) {
@@ -70,7 +72,8 @@ public class Graph {
         }
 
       }
-      System.out.print("\n");
+      System.out.println();
+      System.out.println();
     }
   }
 
@@ -133,7 +136,7 @@ public class Graph {
     return -1;
   }
 
-  // hien thi duong di
+  // display path from A -> E
   void pathDijkstra(int[] dist, int[] path, int p, int q) {
     int preQ = q;
     MyStack<Integer> mStack = new MyStack<>();
@@ -161,6 +164,8 @@ public class Graph {
 
   // dijkstra from p to q
   public void dijkstra(int p, int q) {
+    System.out.println(" Dijkstra algorithm for shortest path from A to  E:");
+    
     int[] dist = new int[n];
     boolean[] visited = new boolean[n];
     int[] path = new int[n];
@@ -174,8 +179,6 @@ public class Graph {
     System.out.println("The length of shortest path from A to E is " + dist[q]);
 
     pathDijkstra(dist, path, p, q);
-    System.out.println(Arrays.toString(path));
-    System.out.println(Arrays.toString(dist));
   }
 
   // run DFS start at position k
@@ -205,6 +208,34 @@ public class Graph {
     System.out.print(System.lineSeparator());
   }
 
+  // run BFS start at position k
+  public void BFS(int k){
+    boolean[] visited = new boolean[n];
+    int visitedCount = 0;
+    MyQueue<Integer> queue = new MyQueue<>();
+    queue.enqueue(k);
+
+    // if stack not empty and not visited all node yet
+    while (!queue.isEmpty() && visitedCount < n) {
+      Integer current = queue.dequeue();
+
+      if (!visited[current]) {
+        visitedCount++;
+        String step = s1.charAt(current) + (visitedCount < n ? "->" : "");
+        System.out.print(step);
+      }
+      visited[current] = true;
+      ArrayList<Integer> neighbors = getNeighbors(current);
+      for (Integer i : neighbors) {
+        if (!visited[i]) {
+          queue.enqueue(i);
+        }
+      }
+    }
+    System.out.print(System.lineSeparator());
+  }
+
+  // get neighbors of node k
   ArrayList<Integer> getNeighbors(int k) {
     ArrayList<Integer> result = new ArrayList<>();
     for (int i = n - 1; i >= 0; i--) {
@@ -215,6 +246,7 @@ public class Graph {
     return result;
   }
 
+  // get edge
   int getEdge(int i, int j) {
     return a[i][j];
   }

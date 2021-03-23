@@ -34,6 +34,14 @@ public class MyPerson {
     service.BFT();
   }
 
+  public void postOrder(){
+    service.postOrder();
+  }
+
+  public void preOrder(){
+    service.preOrder();
+  }
+
   // 1.4 search by ID
   public void search() {
     Scanner scanner = new Scanner(System.in);
@@ -95,5 +103,14 @@ public class MyPerson {
         }
       }
     }
+  }
+
+  public void seedDataForTest() {
+    tree.insert(new Person("1", "Ha", "Ha noi", "12/09/90"));
+    tree.insert(new Person("4", "Lan", "Ha noi", "04/04/87"));
+    tree.insert(new Person("2", "An", "Nam Dinh", "12/09/90"));
+    tree.insert(new Person("3", "Binh", "TH", "01/05/92"));
+    tree.insert(new Person("5", "Tuan", "TB", "02/02/89"));
+    
   }
 }

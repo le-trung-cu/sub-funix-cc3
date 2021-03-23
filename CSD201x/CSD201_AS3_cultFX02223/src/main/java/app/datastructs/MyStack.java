@@ -24,4 +24,11 @@ public class MyStack<T> {
     return a.pop();
   }
 
+   // Queue operations.
+
+  //Retrieves, but does not remove, the head (first element) of this list.
+  public T peek(){
+    return a.peek();
+  }
+
 }

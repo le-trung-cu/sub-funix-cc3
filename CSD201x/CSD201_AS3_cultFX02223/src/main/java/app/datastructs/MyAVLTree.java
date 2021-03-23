@@ -1,5 +1,6 @@
 package app.datastructs;
 
+// Ignore this file.
 public class MyAVLTree<T extends Comparable<T>> {
 
   private Node<T> root;
