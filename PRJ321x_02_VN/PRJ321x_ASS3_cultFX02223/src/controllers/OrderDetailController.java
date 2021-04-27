@@ -12,6 +12,8 @@ import models.Account;
 import models.Orders;
 
 public class OrderDetailController extends HttpServlet {
+	
+	// get order detail
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		if (req.getSession() == null || req.getSession().getAttribute("account") == null) {

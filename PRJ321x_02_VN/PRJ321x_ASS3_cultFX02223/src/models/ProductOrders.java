@@ -1,5 +1,6 @@
 package models;
 
+// order detail
 public class ProductOrders {
 	private int orderId;
 	private int productId;

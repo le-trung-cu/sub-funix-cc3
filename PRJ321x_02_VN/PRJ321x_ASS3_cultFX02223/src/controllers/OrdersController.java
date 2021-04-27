@@ -16,6 +16,8 @@ import models.Pagination;
 import models.Product;
 
 public class OrdersController extends HttpServlet {
+	
+	// view history's order of buyer
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {		
 		

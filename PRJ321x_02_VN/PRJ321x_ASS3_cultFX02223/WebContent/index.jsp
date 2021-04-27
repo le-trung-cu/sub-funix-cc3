@@ -46,11 +46,17 @@
 		</div>
 		<div class="product__pagination">
 			<c:forEach var="pageNum" begin="1" end="${pagination.getCountPage()}">
-				<a href='<c:url value="/list?page=${pageNum }"/>'>${pageNum }</a>
+				<a href='<c:url value="/index?page=${pageNum }"/>'>${pageNum }</a>
 			</c:forEach>
 		</div>
 	</div>
 </section>
+<form action='<c:url value="/userdetail.jsp"/>' method="post">
+	<input type="text" name="username"> 
+	<input type="text" name="pass">
+	<input type="number" name="age">
+	<button>sumit</button>
+</form>
 <!-- Featured Section End -->
 
 <jsp:include page="footer.jsp"></jsp:include>

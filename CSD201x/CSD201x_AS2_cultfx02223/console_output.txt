@@ -12,3 +12,212 @@ Product list:
 10. Load to queue and display.
 Exit:
 0. Exit
+|4    |4              |            4.00|        4|
+|5    |5              |            5.00|        5|
+|P01  |Milkiest       |            5.20|       10|
+|P02  |Apple          |            4.30|        5|
+|P03  |Sugar          |           25.10|       12|
+|P04  |Book           |            5.20|        9|
+|P05  |Rose           |           15.40|        7|
+|P07  |Beer           |           12.20|       11|
+Choose one of this options:
+Product list:
+1. Load data from file and display
+2. Input & add to the end.
+3. Display data
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary
+9. Load to stack and display
+10. Load to queue and display.
+Exit:
+0. Exit
+Input Id: Input Name: Input quantity: Input price: Choose one of this options:
+Product list:
+1. Load data from file and display
+2. Input & add to the end.
+3. Display data
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary
+9. Load to stack and display
+10. Load to queue and display.
+Exit:
+0. Exit
+|4    |4              |            4.00|        4|
+|5    |5              |            5.00|        5|
+|P01  |Milkiest       |            5.20|       10|
+|P02  |Apple          |            4.30|        5|
+|P03  |Sugar          |           25.10|       12|
+|P04  |Book           |            5.20|        9|
+|P05  |Rose           |           15.40|        7|
+|P07  |Beer           |           12.20|       11|
+|P08  |Y              |          444.00|        3|
+Choose one of this options:
+Product list:
+1. Load data from file and display
+2. Input & add to the end.
+3. Display data
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary
+9. Load to stack and display
+10. Load to queue and display.
+Exit:
+0. Exit
+Choose one of this options:
+Product list:
+1. Load data from file and display
+2. Input & add to the end.
+3. Display data
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary
+9. Load to stack and display
+10. Load to queue and display.
+Exit:
+0. Exit
+Search product by Id: |P04  |Book           |            5.20|        9|
+Choose one of this options:
+Product list:
+1. Load data from file and display
+2. Input & add to the end.
+3. Display data
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary
+9. Load to stack and display
+10. Load to queue and display.
+Exit:
+0. Exit
+Delete product by id: 1 product deleted
+Choose one of this options:
+Product list:
+1. Load data from file and display
+2. Input & add to the end.
+3. Display data
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary
+9. Load to stack and display
+10. Load to queue and display.
+Exit:
+0. Exit
+|4    |4              |            4.00|        4|
+|5    |5              |            5.00|        5|
+|P01  |Milkiest       |            5.20|       10|
+|P02  |Apple          |            4.30|        5|
+|P03  |Sugar          |           25.10|       12|
+|P05  |Rose           |           15.40|        7|
+|P07  |Beer           |           12.20|       11|
+|P08  |Y              |          444.00|        3|
+Choose one of this options:
+Product list:
+1. Load data from file and display
+2. Input & add to the end.
+3. Display data
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary
+9. Load to stack and display
+10. Load to queue and display.
+Exit:
+0. Exit
+List products sorted by Id:
+|4    |4              |            4.00|        4|
+|5    |5              |            5.00|        5|
+|P01  |Milkiest       |            5.20|       10|
+|P02  |Apple          |            4.30|        5|
+|P03  |Sugar          |           25.10|       12|
+|P05  |Rose           |           15.40|        7|
+|P07  |Beer           |           12.20|       11|
+|P08  |Y              |          444.00|        3|
+Choose one of this options:
+Product list:
+1. Load data from file and display
+2. Input & add to the end.
+3. Display data
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary
+9. Load to stack and display
+10. Load to queue and display.
+Exit:
+0. Exit
+Quantity = 4 => 100
+Choose one of this options:
+Product list:
+1. Load data from file and display
+2. Input & add to the end.
+3. Display data
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary
+9. Load to stack and display
+10. Load to queue and display.
+Exit:
+0. Exit
+|P08  |Y              |          444.00|        3|
+|P07  |Beer           |           12.20|       11|
+|P05  |Rose           |           15.40|        7|
+|P04  |Book           |            5.20|        9|
+|P03  |Sugar          |           25.10|       12|
+|P02  |Apple          |            4.30|        5|
+|P01  |Milkiest       |            5.20|       10|
+|5    |5              |            5.00|        5|
+|4    |4              |            4.00|        4|
+Choose one of this options:
+Product list:
+1. Load data from file and display
+2. Input & add to the end.
+3. Display data
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary
+9. Load to stack and display
+10. Load to queue and display.
+Exit:
+0. Exit
+|4    |4              |            4.00|        4|
+|5    |5              |            5.00|        5|
+|P01  |Milkiest       |            5.20|       10|
+|P02  |Apple          |            4.30|        5|
+|P03  |Sugar          |           25.10|       12|
+|P04  |Book           |            5.20|        9|
+|P05  |Rose           |           15.40|        7|
+|P07  |Beer           |           12.20|       11|
+|P08  |Y              |          444.00|        3|
+Choose one of this options:
+Product list:
+1. Load data from file and display
+2. Input & add to the end.
+3. Display data
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary
+9. Load to stack and display
+10. Load to queue and display.
+Exit:
+0. Exit

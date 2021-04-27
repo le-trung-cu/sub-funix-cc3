@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<BorderPane fx:id="mainPane" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="controller.ContactController">
+    <top>
+        <HBox spacing="15" style="-fx-padding: 15">
+            <Label text="Filter by group" />
+            <ComboBox fx:id="cbGroup" HBox.hgrow="ALWAYS" />
+            <Label text="Enter contact information" />
+            <TextField fx:id="search" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnSearch" text="Search" onAction="#searchContact"/>
+        </HBox>
+    </top>
+    <center>
+        <TableView fx:id="tblContact" prefWidth="662.0">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+
+            <columns>
+                <TableColumn text="First Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="firstName"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Last Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="lastName"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Phone">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="phone"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Email">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="email"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Birth Date">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="dob"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Group Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="group"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox spacing="15" style="-fx-background-color: #CCFF99; -fx-padding: 15">
+            <Button fx:id="btnDelete" text="Delete" onAction="#deleteContact"/>
+            <Button fx:id="btnUpdate" text="Update" onAction="#updateContact"/>
+            <Button fx:id="btnAdd" text="Add" onAction="#addContact"/>
+            <HBox HBox.hgrow="ALWAYS" alignment="BASELINE_RIGHT">
+                <Button fx:id="btnGroup" text="Manage Groups" onAction="#groupPanel"/>
+            </HBox>
+        </HBox>
+    </bottom>
+</BorderPane>

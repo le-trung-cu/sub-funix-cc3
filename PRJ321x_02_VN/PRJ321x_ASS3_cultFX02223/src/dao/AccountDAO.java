@@ -13,6 +13,7 @@ import models.Pagination;
 
 public class AccountDAO {
 
+	// create a new user
 	public int createUser(Account acc) throws SQLException {
 		DBContext db = DBContext.getIntance();
 		Connection cn = db.getConnection();
@@ -44,6 +45,7 @@ public class AccountDAO {
 		return pointer.getInt(1);
 	}
 
+	// get list users
 	public Pagination<Account> getUsers(int currentPage, int size) throws SQLException {
 		DBContext db =  DBContext.getIntance();
 		Connection con = db.getConnection();
@@ -72,6 +74,7 @@ public class AccountDAO {
 		return new Pagination<Account>(items, size, currentPage, count);
 	}
 
+	// get user by mail and password
 	public Account findAccount(String mail, String pass) throws SQLException {
 		DBContext db = DBContext.getIntance();
 		Connection cn = db.getConnection();

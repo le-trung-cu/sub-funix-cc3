@@ -54,7 +54,7 @@
 			<div class="product__pagination">
 				<c:forEach var="pageNum" begin="1" end="${pagination.getCountPage()}">
 					<a
-						href='<c:url value="/list?page=${pageNum }&brand=${brand}&search=${search}"/>'>${pageNum }</a>
+						href='<c:url value="/search?page=${pageNum }&brand=${brand}&search=${search}"/>'>${pageNum }</a>
 				</c:forEach>
 			</div>
 		</c:if>

@@ -1,10 +1,12 @@
 package models;
 
+// user info
 public class Account {
+	// user mail and password
 	private String usr, pwd;
-	
-
+	// role of user
 	private int role;
+	// name, address, phone of user
 	private String name, address, phone;
 	private int check;
 

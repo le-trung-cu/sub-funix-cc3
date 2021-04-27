@@ -79,7 +79,7 @@ public class LoginController extends HttpServlet {
 
 				} else {
 					// if user login is not admin, redirect to list servlet
-					resp.sendRedirect("list");
+					resp.sendRedirect("index");
 				}
 
 			}
@@ -103,7 +103,7 @@ public class LoginController extends HttpServlet {
 			req.getRequestDispatcher("login.jsp").include(req, resp);
 			return;
 		}
-
+		//req.setAttribute("name", value);
 		// check if user login before with remember me option checked
 		if (cookies != null) {
 			for (Cookie cookie : cookies) {

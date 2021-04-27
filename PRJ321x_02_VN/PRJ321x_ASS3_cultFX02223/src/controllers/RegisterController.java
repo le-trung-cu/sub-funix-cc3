@@ -53,7 +53,7 @@ public class RegisterController extends HttpServlet {
 		try {
 			db.createUser(account);
 			req.getSession(true).setAttribute("account", account);
-			resp.sendRedirect("list");
+			resp.sendRedirect("index");
 		} catch (SQLException e) {
 			req.setAttribute("error", "Register fail");
 			req.getRequestDispatcher("register.jsp").include(req, resp);

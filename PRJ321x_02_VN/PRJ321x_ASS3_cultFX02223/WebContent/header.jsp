@@ -68,7 +68,7 @@
 		</div>
 		<nav class="humberger__menu__nav mobile-menu">
 			<ul>
-				<li class="active"><a href='<c:url value="/list"/>'>Home</a></li>
+				<li class="active"><a href='<c:url value="/index"/>'>Home</a></li>
 				<li><a href="#">Pages</a>
 					<ul class="header__menu__dropdown">
 						<li><a href='<c:url value="/cart"/>'>Shopping Cart</a></li>
@@ -151,7 +151,7 @@
 				<div class="col-lg-6">
 					<nav class="header__menu">
 						<ul>
-							<li class="active"><a href='<c:url value="/list"/>'>Home</a></li>
+							<li class="active"><a href='<c:url value="/index"/>'>Home</a></li>
 							<li><a href="#">Pages</a>
 								<ul class="header__menu__dropdown">
 									<li><a href='<c:url value="/cart"/>'>Shoping Cart</a></li>

@@ -9,6 +9,7 @@ import com.models.Account;
 
 public class AccountMapper implements RowMapper<Account> {
 
+	// map ResultSet  to Account model.
 	@Override
 	public Account mapRow(ResultSet rs, int arg1) throws SQLException {
 		Account account = new Account();

@@ -15,7 +15,7 @@ import models.Product;
 
 public class CartController extends HttpServlet{
 	
-	
+	// add and subtract and delete a product from shopping cart
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		RequestDispatcher dispatcher = req.getRequestDispatcher("cart.jsp");

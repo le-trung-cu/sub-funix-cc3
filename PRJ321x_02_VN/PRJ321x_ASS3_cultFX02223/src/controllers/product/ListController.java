@@ -30,7 +30,7 @@ public class ListController extends HttpServlet {
 			Pagination<Product> ls = new ListProductDAO().search("", brand, nPage, 8);
 			
 			req.setAttribute("pagination", ls);
-			req.getRequestDispatcher("list.jsp").forward(req, resp);
+			req.getRequestDispatcher("index.jsp").forward(req, resp);
 		} catch (SQLException e) {
 			Logger.getLogger(ListController.class.getName()).log(Level.SEVERE, null, e);
 		}

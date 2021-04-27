@@ -1,9 +1,12 @@
 package models;
 
 public class Product {
+	//product id
 	private int id;
 
-	private String name, desciption, src, // location of image of product
+	private String name, // product name 
+			desciption, 
+			src, // location of image of product
 			type, // type of product (for future purpose)
 			brand; // product's category (for future use)
 	private float price;

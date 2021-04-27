@@ -19,16 +19,18 @@ import com.models.Account;
 @Controller
 public class AccountController {
 	
+	// Account Service
 	@Autowired
 	private AccountDAO accountService;
 
-	
+	// user login get form
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String getLogin(HttpServletRequest request, HttpServletResponse response) {	
 		
 		return "login";
 	}
 	
+	// user login post infomation
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public ModelAndView postLogin(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		String username = request.getParameter("username");
@@ -53,7 +55,8 @@ public class AccountController {
 		}
 		return new ModelAndView("login", "error", "Please enter username and password");
 	}
-
+	
+	// user logout
 	@RequestMapping(value = "/logout", method = RequestMethod.POST)
 	public void postLogout(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		HttpSession session = request.getSession();

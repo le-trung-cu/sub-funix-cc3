@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox style="-fx-padding: 15" xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.GroupController">
+    <HBox spacing="15" style="-fx-padding: 15;">
+        <Label text="Enter group name" />
+        <TextField fx:id="search"/>
+        <Button fx:id="btnSearch" text="Search" onAction="#groupAction"/>
+    </HBox>
+    <HBox>
+        <ListView fx:id="tblGroup"/>
+        <VBox spacing="15" style="-fx-padding: 15">
+            <Label text="Enter group name" />
+            <TextField fx:id="groupName"/>
+            <HBox spacing="15">
+                <Button fx:id="btnAdd" text="Save" onAction="#addAction"/>
+                <Button fx:id="btnUpdate" text="Update" onAction="#groupAction"/>
+                <Button fx:id="btnDelete" text="Delete" onAction="#groupAction"/>
+            </HBox>
+            <VBox VBox.vgrow="ALWAYS" alignment="BOTTOM_RIGHT">
+                <Button fx:id="btnClose" text="Close" onAction="#groupAction"/>
+            </VBox>
+        </VBox>
+    </HBox>
+</VBox>

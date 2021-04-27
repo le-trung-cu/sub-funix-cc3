@@ -6,6 +6,7 @@ import java.util.Scanner;
 import app.datastructs.Graph;
 
 public class App {
+    // show menu
     public static void showMenu() {
 
         System.out.println("Choose one of this options:");

@@ -38,7 +38,7 @@ public class PayController extends HttpServlet {
 			session.setAttribute("cart", new Cart());
 			session.setAttribute("message", "Thank you! Checkout success.");
 			
-			resp.sendRedirect(req.getContextPath()+"/list");
+			resp.sendRedirect("index");
 			
 			
 		} catch (Exception e) {

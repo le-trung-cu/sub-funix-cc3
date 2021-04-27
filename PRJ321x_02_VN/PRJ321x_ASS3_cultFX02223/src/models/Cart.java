@@ -3,8 +3,10 @@ package models;
 import java.util.ArrayList;
 import java.util.List;
 
+// cart info when user add 1 product to cart
 public class Cart {
-	private List<Product> items; // list of item in cart
+	// list of item in cart
+	private List<Product> items; 
 
 	public Cart() {
 		items = new ArrayList<>();

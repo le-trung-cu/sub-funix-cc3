@@ -6,12 +6,17 @@ import java.util.List;
 public class Orders {
 	private int orderId;
 	private int status;
-	private float price; // total amount of order
+	// total amount of order
+	private float price;
 	private Date orderDate;
 	private Date receiveDate;
+	// buyer's phone
 	private String phoneNumber;
-	private String address; // buyer's address
+	// buyer's address
+	private String address;
+	// buyer's mail
 	private String userMail;
+	// buyer's discount code
 	private String discount;
 
 	private List<ProductOrders> lp;

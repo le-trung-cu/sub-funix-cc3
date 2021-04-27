@@ -5,8 +5,9 @@
 	id="WebApp_ID" version="3.0">
 	<display-name>PRJ321x_ASS3_cultFX02223</display-name>
 	<welcome-file-list>
-		<welcome-file>home.jsp</welcome-file>
+		<welcome-file>index</welcome-file>
 	</welcome-file-list>
+	
 	<servlet>
 		<servlet-name>RegisterController</servlet-name>
 		<servlet-class>controllers.RegisterController</servlet-class>
@@ -61,7 +62,7 @@
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>ListController</servlet-name>
-		<url-pattern>/list</url-pattern>
+		<url-pattern>/index</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>SearchController</servlet-name>

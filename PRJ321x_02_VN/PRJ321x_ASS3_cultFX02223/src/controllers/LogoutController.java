@@ -14,6 +14,6 @@ public class LogoutController extends HttpServlet{
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.getSession(true).invalidate();
-		resp.sendRedirect("list");
+		resp.sendRedirect("index");
 	}
 }
